@@ -1,0 +1,36 @@
+<% provide(:title, 'CMU-SV Sensors') %>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Team Viz: CMU-SV Sensors</title>
+</head>
+
+<body>
+<div class="header" id="header">
+  <div class="top-container" id="top-container">
+    <table width="100%" border="0">
+      <tr>
+        <td width="20%">&nbsp;</td>
+        <td width="30%"><img src="assets/cmusv_logo.jpg" width="256" height="64"  alt=""/></td>
+        <td width="30%"><div align="right"></div></td>
+        <td width="20%">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  <div class="nav_shadow" id="nav_shadow"></div>
+
+  <script type="text/javascript">
+
+      var floor1 = d3.xml("assets/cmusv_floor_level1.svg", "image/svg+xml", function(xml) {
+          document.body.appendChild(xml.documentElement);
+      });
+
+      var floor2 = d3.xml("assets/cmusv_floor_level2.svg", "image/svg+xml", function(xml) {
+          document.body.appendChild(xml.documentElement);
+      });
+
+  </script>
+
+</body>
+</html>
